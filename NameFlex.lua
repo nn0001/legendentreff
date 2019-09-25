@@ -13,7 +13,7 @@ end
 local Apply_Button = gui.Button( Misc_Ref, "Nameflex", buttonPressed )
 
 function nameSpam()
-	local localPlayer = entities.GetLocalocalPlayerlayer()
+	local localPlayer = entities.GetLocaPlayer()
 	if (localPlayer == nil) then
 		isPressed = false;
 	end
