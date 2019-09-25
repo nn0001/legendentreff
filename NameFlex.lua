@@ -8,6 +8,7 @@ local spamName = client.GetConVar("name");
 
 local function buttonPressed()
 	isPressed = true;
+	client.ChatSay("Legendentreff > you");
 end
 local Apply_Button = gui.Button( Misc_Ref, "Nameflex", buttonPressed )
 
@@ -18,7 +19,8 @@ function nameSpam()
 	end
 	if (isPressed) then
 		if globals.TickCount() - spammed_last > 10 then
-			client.SetConVar("name", spamName .. ' ', false);
+			spamName = spamName .. ' ';
+			client.SetConVar("name", spamName , false);
 			spammed_last = globals.TickCount();
 		end
 	end
