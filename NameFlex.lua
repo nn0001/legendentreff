@@ -8,7 +8,7 @@ local spamName = client.GetConVar("name");
 
 local function buttonPressed()
 	isPressed = true;
-	client.ChatSay("Legendentreff > you");
+	--client.ChatSay("Legendentreff > you");
 end
 local Apply_Button = gui.Button( Misc_Ref, "Nameflex", buttonPressed )
 
