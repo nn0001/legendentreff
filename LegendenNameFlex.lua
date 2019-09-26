@@ -28,7 +28,7 @@ function nameSpam()
 				client.SetConVar("name", originalName , false);
 			end
 			spammed_last = globals.TickCount();
-			count += 1;
+			count = count + 1;
 		end
 	end
 end
